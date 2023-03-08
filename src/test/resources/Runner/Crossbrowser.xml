@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+  <test thread-count="5" name="Test1" parallel="classes">
+  <parameter name="browser" value="chrome"/>
+    <classes>
+  		<class name="TESTNGpractice.AddAppointmentDeleteDocterTestNg"/>
+     	<class name="TESTNGpractice.AdminDoctorModuleTestNg"/>
+    </classes>
+  </test> <!-- Test -->
+   <test thread-count="5" name="Test2" >
+   <parameter name="browser" value="firefox"/>
+    <classes>
+   		<class name="TESTNGpractice.AddPatientAndMedicalHistoryTestTestNG"/>
+        <class name="TESTNGpractice.PatientApointmentBookingTestNg"/>
+	</classes>
+  </test>
+</suite> <!-- Suite -->
